@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F1DE; /* Aqui você pode colocar qualquer cor (nome, HEX, RGB etc.) */
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #3E3F5B; /* Cor de fundo da barra */
+    padding: 10px 20px; /* Espaçamento interno */
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.navbar-left {
+    list-style-type: none;
+}
+
+.navbar-left li {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;   
+    cursor: pointer;
+}
+
+.navbar-left i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+button {
+    margin-top: 20px;           /* Espaço acima do botão, separando de outros elementos */
+    padding: 10px 20px;         /* Espaço interno: 10px vertical (topo/baixo), 20px horizontal (lados) */
+    font-size: 16px;            /* Tamanho da fonte dentro do botão */
+    cursor: pointer;            /* Muda o cursor para a "mãozinha" ao passar o mouse */
+    background-color: #ACD3A8;  /* Cor de fundo do botão (verde) */
+    color: black;               /* Cor do texto do botão */
+    border: none;               /* Remove a borda padrão do botão */
+    border-radius: 5px;         /* Cantos levemente arredondados */
+}
+
+button:hover {
+    background-color: #449247;  /* Muda a cor de fundo quando o mouse passa por cima */
+}
+
+.card {
+    width: 100%; 
+    background-color: #3E3F5B;         
+    padding: 40px;                   /* Espaço interno */
+    border-radius: 10px;             /* Cantos arredondados */
+    max-width: 300px;                /* Largura máxima */
+    margin: 20px auto;               /* Centraliza na tela com margem em cima/baixo */
+    text-align: center;             /* Centraliza o conteúdo dentro */
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
