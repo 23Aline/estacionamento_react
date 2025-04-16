@@ -5,17 +5,17 @@
 }
 
 body {
-    background-color: #fff9e6; /* Aqui você pode colocar qualquer cor (nome, HEX, RGB etc.) */
+    background-color: #f5f4de; 
 }
 
 
 .navbar {
     width: 100%;
-    background-color: #3E3F5B; /* Cor de fundo da barra */
-    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #000000;
+    padding: 20px 20px; 
     display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: flex-start; 
+    align-items: center; 
 }
 
 .navbar-left {
@@ -24,81 +24,145 @@ body {
 
 .navbar-left a {
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     font-family: Arial, sans-serif;
     font-weight: bold;   
     cursor: pointer;
 }
 
 .navbar-left i {
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-right: 10px; 
 }
 
 button {
-    margin-top: 20px;           /* Espaço acima do botão, separando de outros elementos */
-    padding: 10px 20px;         /* Espaço interno: 10px vertical (topo/baixo), 20px horizontal (lados) */
-    font-size: 16px;            /* Tamanho da fonte dentro do botão */
-    cursor: pointer;            /* Muda o cursor para a "mãozinha" ao passar o mouse */
-    background-color: #ACD3A8;  /* Cor de fundo do botão (verde) */
-    color: black;               /* Cor do texto do botão */
-    border: none;               /* Remove a borda padrão do botão */
-    border-radius: 5px;         /* Cantos levemente arredondados */
+    width: 100%;
+    margin-top: 20px;         
+    padding: 15px 20px;        
+    font-size: 20px;            
+    cursor: pointer;            
+    background-color: #99BC85; 
+    color: black;              
+    border: none;               
+    border-radius: 5px;         
 }
 
 button:hover {
-    background-color: #449247;  /* Muda a cor de fundo quando o mouse passa por cima */
+    background-color: #449247;  
 }
 
 .card {
-    width: 100%; 
-    background-color: #3E3F5B;         
-    padding: 40px;                   /* Espaço interno */
-    border-radius: 10px;             /* Cantos arredondados */
-    max-width: 300px;                /* Largura máxima */
-    margin: 20px auto;               /* Centraliza na tela com margem em cima/baixo */
-    text-align: center;             /* Centraliza o conteúdo dentro */
+    width: 400%; 
+    background-color: #000000;         
+    padding: 40px;                   
+    border-radius: 10px;           
+    max-width: 400px;               
+    margin: 20px auto;              
+    text-align: center;           
     display: block;
+    flex-direction: column; 
 }
 
 h1 {
     text-align: center;
     margin: 40px;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .cadastro {
     width: 100%; 
-    background-color: #3E3F5B; /* Cor de fundo do quadro do formulário */
+    background-color: #000000; 
     color: white;
-    padding: 40px;             /* Espaço interno dentro do quadro */
-    border-radius: 10px;       /* Cantos arredondados */
-    max-width: 600px;          /* Largura máxima do quadro */
-    margin: 40px auto;         /* Centraliza o quadro na tela com margem em cima/baixo */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do quadro */
+    padding: 40px;             
+    border-radius: 10px;       
+    max-width: 600px;        
+    margin: 40px auto;        
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .cadastro form {
     display: flex;
-    flex-direction: column;   /* Organiza os campos do formulário em uma coluna */
-    gap: 12px;                /* Espaço entre os elementos */
+    flex-direction: column;   
+    gap: 12px;                
 }
 
+.cadastro select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+  }
+
 .cadastro input {
-    padding: 10px;            /* Espaço interno nos campos de texto */
-    border: 1px solid #ccc;   /* Borda suave ao redor dos campos */
-    border-radius: 5px;       /* Cantos arredondados nos campos */
-    font-size: 14px;          /* Tamanho da fonte dentro dos campos */
+    padding: 10px;          
+    border: 1px solid #ccc;   
+    border-radius: 5px;       
+    font-size: 14px;         
 }
 
 .cadastro button {
-    padding: 12px 20px;       /* Mais espaço interno no botão */
-    background-color: #ACD3A8; /* Cor de fundo do botão */
-    color: black;              /* Cor do texto do botão */
-    border: none;              /* Remove a borda do botão */
-    border-radius: 5px;        /* Arredonda os cantos do botão */
-    cursor: pointer;          /* Cursor como "mãozinha" ao passar por cima */
+    padding: 12px 20px;     
+    background-color: #99BC85; 
+    color: black;             
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;          
 }
 
 .cadastro button:hover {
-    background-color: #449247; /* Altera a cor do botão quando o mouse passa por cima */
+    background-color: #449247; 
 }
+
+.vaga-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0;
+    justify-items: center;
+  }
+  
+  .vaga {
+    background-color: #99BC85; 
+    color: black;
+    font-size: 30px; 
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 75px;
+  }
+  
+  .vaga.ocupada {
+    background-color: #E8C999; 
+    color: transparent; 
+  }
+  
+  .lista-vagas {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+.lista-vagas li {
+  background-color: #BBD8A3;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista-vagas li strong {
+  color: #333;
+  font-size: 25px;
+}
+
+.lista-vagas li p {
+  font-size: 20px;
+  color: #555454;
+  margin: 5px 0;
+}
+
+  
