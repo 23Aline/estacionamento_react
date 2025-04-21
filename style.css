@@ -5,17 +5,26 @@
 }
 
 body {
-    background-color: #f5f4de; 
+    background-image: url('pexels-k-howard-94471-2220292.jpg');
+    background-size: cover;
+    /* Faz a imagem preencher toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    background-attachment: fixed;
+    /* Faz a imagem ficar fixa ao rolar */
+    align-items: center;
 }
 
 
 .navbar {
     width: 100%;
     background-color: #000000;
-    padding: 20px 20px; 
+    padding: 20px 20px;
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .navbar-left {
@@ -26,91 +35,107 @@ body {
     color: white;
     font-size: 30px;
     font-family: Arial, sans-serif;
-    font-weight: bold;   
+    font-weight: bold;
     cursor: pointer;
 }
 
 .navbar-left i {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 button {
     width: 100%;
-    margin-top: 20px;         
-    padding: 15px 20px;        
-    font-size: 20px;            
-    cursor: pointer;            
-    background-color: #99BC85; 
-    color: black;              
-    border: none;               
-    border-radius: 5px;         
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #99BC85;
+    color: black;
+    border: none;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #449247;  
+    background-color: #449247;
 }
 
 .card {
-    width: 400%; 
-    background-color: #000000;         
-    padding: 40px;                   
-    border-radius: 10px;           
-    max-width: 400px;               
-    margin: 20px auto;              
-    text-align: center;           
+    width: 400%;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
     display: block;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 h1 {
     text-align: center;
     margin: 40px;
-    font-size: 35px;
+    font-size: 45px;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .cadastro {
-    width: 100%; 
-    background-color: #000000; 
+    width: 200%;
+    max-width: 1200px;
+    background-color: #000000;
     color: white;
-    padding: 40px;             
-    border-radius: 10px;       
-    max-width: 600px;        
-    margin: 40px auto;        
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 50px;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .cadastro form {
     display: flex;
-    flex-direction: column;   
-    gap: 12px;                
+    flex-direction: column;
+    gap: 20px;
 }
 
-.cadastro select {
+.form-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group select {
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; 
-  }
-
-.cadastro input {
-    padding: 10px;          
-    border: 1px solid #ccc;   
-    border-radius: 5px;       
-    font-size: 14px;         
 }
 
 .cadastro button {
-    padding: 12px 20px;     
-    background-color: #99BC85; 
-    color: black;             
-    border: none;              
-    border-radius: 5px;        
-    cursor: pointer;          
+    padding: 12px 20px;
+    background-color: #99BC85;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .cadastro button:hover {
-    background-color: #449247; 
+    background-color: #449247;
 }
 
 .vaga-container {
@@ -121,48 +146,62 @@ h1 {
     margin: 30px auto;
     padding: 0;
     justify-items: center;
-  }
-  
-  .vaga {
-    background-color: #99BC85; 
+}
+
+.vaga {
+    background-color: #99BC85;
     color: black;
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: bold;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
     width: 75px;
-  }
-  
-  .vaga.ocupada {
-    background-color: #E8C999; 
-    color: transparent; 
-  }
-  
-  .lista-vagas {
-  list-style-type: none; 
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column; 
-  gap: 15px; 
+}
+
+.vaga.ocupada {
+    background-color: #E8C999;
+    color: transparent;
+}
+
+.lista-vagas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .lista-vagas li {
-  background-color: #BBD8A3;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #BBD8A3;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .lista-vagas li strong {
-  color: #333;
-  font-size: 25px;
+    color: #333;
+    font-size: 25px;
 }
 
 .lista-vagas li p {
-  font-size: 20px;
-  color: #555454;
-  margin: 5px 0;
+    font-size: 20px;
+    color: #555454;
+    margin: 5px 0;
 }
 
-  
+.pesquisa-container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.pesquisa-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}

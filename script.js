@@ -87,4 +87,14 @@ if (document.getElementById("vagaContainer")) {
       vagaContainer.appendChild(vagaBox);
     }
   }
+
+  document.getElementById("campoBusca").addEventListener("input", function () {
+    const filtro = this.value.toLowerCase();
+    const vagas = document.querySelectorAll("#listaVagas li");
+  
+    vagas.forEach(vaga => {
+      const texto = vaga.textContent.toLowerCase();
+      vaga.style.display = texto.includes(filtro) ? "block" : "none";
+    });
+  });
   

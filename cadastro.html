@@ -26,27 +26,46 @@
             <h1>Cadastrar veículo:</h1>
             <article class="cadastro">
                 <form action="">
-                    <label for="placa">Placa do veículo:</label>
-                    <input type="text" id="placa" name="placa" required>
-                    <label for="nome">Nome do proprietário:</label>
-                    <input type="text" id="nome" name="nome" required>
-                    <label for="apartamento">Número do apartamento:</label>
-                    <input type="number" id="apartamento" name="apartamento" required>
-                    <label for="bloco">Bloco do apartamento:</label>
-                    <select id="bloco" name="bloco" required>
-                      <option value="" disabled selected>Selecione o bloco</option>
-                      <option value="Bloco A">Bloco A</option>
-                      <option value="Bloco B">Bloco B</option>
-                      <option value="Bloco C">Bloco C</option>
-                    </select>                    
-                    <label for="modelo">Modelo do veículo:</label>
-                    <input type="text" id="modelo" name="modelo" required>
-                    <label for="cor">Cor do veículo:</label>
-                    <input type="text" id="cor" name="cor" required>
-                    <label for="vaga">Número da vaga de estacionamento:</label>
-                    <input type="number" id="vaga" name="vaga" min="1" max="50" required>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="placa">Placa do veículo:</label>
+                        <input type="text" id="placa" name="placa" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="nome">Nome do proprietário:</label>
+                        <input type="text" id="nome" name="nome" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="apartamento">Número do apartamento:</label>
+                        <input type="number" id="apartamento" name="apartamento" required>
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="bloco">Bloco do apartamento:</label>
+                        <select id="bloco" name="bloco" required>
+                          <option value="" disabled selected>Selecione o bloco</option>
+                          <option value="Bloco A">Bloco A</option>
+                          <option value="Bloco B">Bloco B</option>
+                          <option value="Bloco C">Bloco C</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="modelo">Modelo do veículo:</label>
+                        <input type="text" id="modelo" name="modelo" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="cor">Cor do veículo:</label>
+                        <input type="text" id="cor" name="cor" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="vaga">Número da vaga de estacionamento:</label>
+                        <input type="number" id="vaga" name="vaga" min="1" max="50" required>
+                      </div>
+                    </div>
+                  
                     <button type="submit">Cadastrar</button>
-                </form>
+                  </form>                       
             </article>
         </section>
     </main>
