@@ -205,3 +205,33 @@ h1 {
     font-size: 20px;
     border: 1px solid #ccc;
 }
+
+.remover-btn {
+    background-color: #000000; 
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    width: auto; 
+}
+
+.remover-btn:hover {
+    background-color: #881104; 
+}
+
+.mensagem-vazia {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 30px auto;
+    font-size: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }  
