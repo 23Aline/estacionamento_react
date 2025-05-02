@@ -1,34 +1,28 @@
 import React from 'react';
-import '../styles/home.css'; // Certifique-se de que o caminho esteja correto
+import '../styles/home.css';
 import { Link } from 'react-router-dom';
 
 function Home() {
     return (
-        <div>
-            <header>
-                <div className="navbar">
-                    <div className="navbar-left">
-                        <Link to="/" className="w3-xlarge" style={{ color: 'white', textDecoration: 'none' }}>
-                            <i className="fa fa-home"></i> Home
-                        </Link>
-                    </div>
-                </div>
-            </header>
-            <main>
-                <section>
-                    <h1>Controle de Estacionamento</h1>
-                    <article className="card">
-                        <Link to="/CadastrarVagas">
-                            <button>Cadastrar vagas</button>
-                        </Link>
-                        <Link to="/VagasCadastradas">
-                            <button>Vagas cadastradas</button>
-                        </Link>
-                        <Link to="/VagasDisponiveis">
-                            <button>Vagas disponíveis</button>
-                        </Link>
-                    </article>
-                </section>
+        <div className="container">
+            <aside className="sidebar">
+                <h2>Menu</h2>
+                <Link to="/" className="sidebar-link">Home</Link>
+                <Link to="/CadastrarVagas" className="sidebar-link">Cadastrar Vagas</Link>
+                <Link to="/VagasCadastradas" className="sidebar-link">Vagas Cadastradas</Link>
+                <Link to="/VagasDisponiveis" className="sidebar-link">Vagas Disponíveis</Link>
+            </aside>
+
+            <main className="main-content">
+                <h1>Controle de Estacionamento</h1>
+                <p>Bem-vindo! Antes de cadastrar uma vaga, acesse a página de Vagas Disponíveis para verificar quais 
+                    ainda estão livres. Em seguida, retorne e realize o cadastro escolhendo uma dessas vagas. Para 
+                    consultar ou remover um cadastro, vá até a página de Vagas Cadastradas.</p>
+                <img
+                    src="https://i.pinimg.com/736x/f7/12/d4/f712d40b4b498c262fae9f44f9dd1838.jpg" 
+                    alt="Ícone de estacionamento"
+                    className="imagem-estacionamento"
+                />
             </main>
         </div>
     );

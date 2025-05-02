@@ -1,19 +1,56 @@
-.cadastro {
-    width: 200%;
-    max-width: 1200px;
-    background-color: #000000;
-    color: white;
-    padding: 50px;
-    border-radius: 10px;
-    margin: 40px auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.cadastro h1 {
+.sidebar {
+    width: 250px;
+    background-color: #000000;
+    padding: 30px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #A94A4A;
     text-align: center;
-    font-size: 30px;
-    margin-top: 2px;
+}
+
+.sidebar-link:hover {
+    background-color: #F4D793;
+    color: black;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #FFF6DA;
+    overflow-y: auto;
+}
+
+.cadastro {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 100px;
 }
 
 .cadastro form {
@@ -25,7 +62,6 @@
 .form-row {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -38,7 +74,7 @@
 
 .form-group label {
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .form-group input,
@@ -51,8 +87,9 @@
 
 .cadastro button {
     padding: 12px 20px;
-    background-color: #99BC85;
-    color: black;
+    font-size: 20px;
+    background-color: #A94A4A;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -60,5 +97,6 @@
 }
 
 .cadastro button:hover {
-    background-color: #449247;
+    background-color: #F4D793;
+    color: #000000;
 }

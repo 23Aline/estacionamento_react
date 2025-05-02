@@ -19,7 +19,7 @@ const VagasCadastradas = () => {
         const novasVagas = [...vagas];
         novasVagas.splice(index, 1);
         setVagas(novasVagas);
-        localStorage.setItem('vagas', JSON.stringify(novasVagas)); // Persistência imediata
+        localStorage.setItem('vagas', JSON.stringify(novasVagas)); 
     };
 
     const filteredVagas = vagas.filter((vaga) =>
@@ -28,18 +28,18 @@ const VagasCadastradas = () => {
     );
 
     return (
-        <div>
+        <>
             <header>
-                <div className="navbar">
-                    <div className="navbar-left">
-                        <Link to="/" className="w3-xlarge" style={{ color: 'white', textDecoration: 'none' }}>
-                            <i className="fa fa-home"></i> Home
-                        </Link>
-                    </div>
-                </div>
+                <aside className="sidebar">
+                    <h2>Menu</h2>
+                    <Link to="/" className="sidebar-link">Home</Link>
+                    <Link to="/CadastrarVagas" className="sidebar-link">Cadastrar Vagas</Link>
+                    <Link to="/VagasCadastradas" className="sidebar-link">Vagas Cadastradas</Link>
+                    <Link to="/VagasDisponiveis" className="sidebar-link">Vagas Disponíveis</Link>
+                </aside>
             </header>
 
-            <main>
+            <main className="conteudo-vagas">
                 <section>
                     <h1>Vagas Cadastradas</h1>
                     <div className="pesquisa-container">
@@ -54,7 +54,7 @@ const VagasCadastradas = () => {
 
                     <ul id="listaVagas" className="lista-vagas">
                         {filteredVagas.length === 0 ? (
-                            <li className="vaga-item">Nenhuma vaga encontrada.</li>
+                            <li className="mensagem-vazia">Nenhuma vaga encontrada.</li>
                         ) : (
                             filteredVagas.map((vaga, index) => (
                                 <li key={index} className="vaga-item">
@@ -63,13 +63,12 @@ const VagasCadastradas = () => {
                                     <p>Veículo: {vaga.modelo}, Cor: {vaga.cor}, Placa: {vaga.placa}</p>
                                     <button className="remover-btn" onClick={() => handleRemover(index)}>Remover</button>
                                 </li>
-                                
                             ))
                         )}
                     </ul>
                 </section>
             </main>
-        </div>
+        </>
     );
 };
 

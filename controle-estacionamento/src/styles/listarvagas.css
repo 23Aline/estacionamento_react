@@ -1,16 +1,50 @@
-
-.vaga-container {
+.pagina-container {
+    display: flex;
+  }
+  
+  .navbar {
+    width: 240px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333; 
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000; 
+  }
+  
+  .navbar-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .navbar-left a:hover {
+    background-color: #555;
+  }
+  
+  .conteudo-principal {
+    margin-left: 240px; 
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .vaga-container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr); 
     gap: 10px;
     max-width: 1000px;
     margin: 30px auto;
     padding: 0;
     justify-items: center;
-}
-
-.vaga {
-    background-color: #99BC85;
+    box-sizing: border-box;
+  }
+  
+  .vaga {
+    background-color: #C1D8C3;
     color: black;
     font-size: 30px;
     font-weight: bold;
@@ -18,15 +52,18 @@
     text-align: center;
     border-radius: 8px;
     width: 75px;
-}
-
-.vaga.ocupada {
-    background-color: #E8C999;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vaga.ocupada {
+    background-color: #A94A4A;
     color: transparent;
-}
-
-.mensagem-vazia {
-    background-color: rgba(0, 0, 0, 0.6); 
+    cursor: not-allowed; 
+  }
+  
+  .mensagem-vazia {
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
@@ -35,4 +72,5 @@
     margin: 30px auto;
     font-size: 35px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }  
+  }
+  
