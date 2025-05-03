@@ -19,7 +19,7 @@ const VagasCadastradas = () => {
         const novasVagas = [...vagas];
         novasVagas.splice(index, 1);
         setVagas(novasVagas);
-        localStorage.setItem('vagas', JSON.stringify(novasVagas)); 
+        localStorage.setItem('vagas', JSON.stringify(novasVagas));
     };
 
     const filteredVagas = vagas.filter((vaga) =>
@@ -28,16 +28,14 @@ const VagasCadastradas = () => {
     );
 
     return (
-        <>
-            <header>
-                <aside className="sidebar">
-                    <h2>Menu</h2>
-                    <Link to="/" className="sidebar-link">Home</Link>
-                    <Link to="/CadastrarVagas" className="sidebar-link">Cadastrar Vagas</Link>
-                    <Link to="/VagasCadastradas" className="sidebar-link">Vagas Cadastradas</Link>
-                    <Link to="/VagasDisponiveis" className="sidebar-link">Vagas Disponíveis</Link>
-                </aside>
-            </header>
+        <div className="container">
+            <aside className="sidebar">
+                <h2>Menu</h2>
+                <Link to="/" className="sidebar-link">Home</Link>
+                <Link to="/CadastrarVagas" className="sidebar-link">Cadastrar Vagas</Link>
+                <Link to="/VagasCadastradas" className="sidebar-link">Vagas Cadastradas</Link>
+                <Link to="/VagasDisponiveis" className="sidebar-link">Vagas Disponíveis</Link>
+            </aside>
 
             <main className="conteudo-vagas">
                 <section>
@@ -68,7 +66,7 @@ const VagasCadastradas = () => {
                     </ul>
                 </section>
             </main>
-        </>
+        </div> 
     );
 };
 

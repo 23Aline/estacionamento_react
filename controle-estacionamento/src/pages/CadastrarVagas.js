@@ -48,48 +48,50 @@ const CadastrarVagas = () => {
       </aside>
 
       <main className="main-content">
-        <h1>Cadastrar veículo:</h1>
-        <div className="cadastro">
-          <section>
-            <form onSubmit={handleSubmit}>
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="placa">Placa do veículo:</label>
-                  <input type="text" id="placa" value={formData.placa} onChange={handleChange} required />
+        <div className="cadastro-content">
+           <h1>Cadastrar veículo:</h1>
+          <div className="cadastro">
+            <section>
+              <form onSubmit={handleSubmit}>
+                <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="placa">Placa do veículo:</label>
+                    <input type="text" id="placa" value={formData.placa} onChange={handleChange} required />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="nome">Nome do proprietário:</label>
+                    <input type="text" id="nome" value={formData.nome} onChange={handleChange} required />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="apartamento">Número do apartamento:</label>
+                    <input type="number" id="apartamento" value={formData.apartamento} onChange={handleChange} required />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="bloco">Bloco do apartamento:</label>
+                    <select id="bloco" value={formData.bloco} onChange={handleChange} required>
+                      <option value="" disabled>Selecione o bloco</option>
+                      <option value="Bloco A">Bloco A</option>
+                      <option value="Bloco B">Bloco B</option>
+                      <option value="Bloco C">Bloco C</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="modelo">Modelo do veículo:</label>
+                    <input type="text" id="modelo" value={formData.modelo} onChange={handleChange} required />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="cor">Cor do veículo:</label>
+                    <input type="text" id="cor" value={formData.cor} onChange={handleChange} required />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="vaga">Número da vaga:</label>
+                    <input type="number" id="vaga" value={formData.vaga} onChange={handleChange} min="1" max="50" required />
+                  </div>
                 </div>
-                <div className="form-group">
-                  <label htmlFor="nome">Nome do proprietário:</label>
-                  <input type="text" id="nome" value={formData.nome} onChange={handleChange} required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="apartamento">Número do apartamento:</label>
-                  <input type="number" id="apartamento" value={formData.apartamento} onChange={handleChange} required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="bloco">Bloco do apartamento:</label>
-                  <select id="bloco" value={formData.bloco} onChange={handleChange} required>
-                    <option value="" disabled>Selecione o bloco</option>
-                    <option value="Bloco A">Bloco A</option>
-                    <option value="Bloco B">Bloco B</option>
-                    <option value="Bloco C">Bloco C</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="modelo">Modelo do veículo:</label>
-                  <input type="text" id="modelo" value={formData.modelo} onChange={handleChange} required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="cor">Cor do veículo:</label>
-                  <input type="text" id="cor" value={formData.cor} onChange={handleChange} required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="vaga">Número da vaga:</label>
-                  <input type="number" id="vaga" value={formData.vaga} onChange={handleChange} min="1" max="50" required />
-                </div>
-              </div>
-              <button type="submit">Cadastrar</button>
-            </form>
-          </section>
+                <button type="submit">Cadastrar</button>
+              </form>
+            </section>
+          </div>
         </div>
       </main>
     </div>

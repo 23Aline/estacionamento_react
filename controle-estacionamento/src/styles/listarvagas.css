@@ -1,76 +1,91 @@
-.pagina-container {
-    display: flex;
-  }
-  
-  .navbar {
-    width: 240px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #333; 
-    padding: 20px;
-    box-sizing: border-box;
-    z-index: 1000; 
-  }
-  
-  .navbar-left a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-    padding: 10px 0;
-  }
-  
-  .navbar-left a:hover {
-    background-color: #555;
-  }
-  
-  .conteudo-principal {
-    margin-left: 240px; 
-    padding: 20px;
-    width: 100%;
-  }
-  
-  .vaga-container {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); 
-    gap: 10px;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0;
-    justify-items: center;
-    box-sizing: border-box;
-  }
-  
-  .vaga {
-    background-color: #C1D8C3;
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    width: 75px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .vaga.ocupada {
-    background-color: #A94A4A;
-    color: transparent;
-    cursor: not-allowed; 
-  }
-  
-  .mensagem-vazia {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    margin: 30px auto;
-    font-size: 35px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #000000;
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #A94A4A;
+  text-align: center;
+}
+
+.sidebar-link:hover {
+  background-color: #F4D793;
+  color: black;
+}
+
+.conteudo-principal {
+  margin-left: 240px;
+  padding: 20px;
+  width: 100%;
+}
+
+.conteudo-principal h1 {
+  text-align: center;
+}
+
+.vaga-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); 
+  gap: 10px;
+  width: fit-content; 
+  margin: 30px auto;  
+  padding: 0;
+  justify-items: center;
+  box-sizing: border-box;
+}
+
+.vaga {
+  background-color: #C1D8C3;
+  color: black;
+  font-size: 30px;        
+  font-weight: bold;
+  padding: 10px;          
+  text-align: center;
+  border-radius: 8px;
+  width: 60px;            
+  height: 60px;          
+  cursor: pointer;
+  display: flex;          
+  align-items: center;
+  justify-content: center;
+}
+
+
+.vaga.ocupada {
+  background-color: #A94A4A;
+  color: transparent;
+  cursor: not-allowed;
+}
+
+.mensagem-vazia {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  margin: 30px auto;
+  font-size: 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

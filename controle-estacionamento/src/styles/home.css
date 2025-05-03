@@ -1,21 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #FFF6DA;
-    font-family: Arial, sans-serif;
-}
-
 .container {
-    display: flex; 
+    display: flex;
     height: 100vh;
 }
 
 .sidebar {
-    width: 250px;
+    width: 240px;
     background-color: #000000;
     padding: 30px 20px;
     color: white;
@@ -24,30 +13,26 @@ body {
     gap: 20px;
 }
 
-.sidebar h2 {
-    font-size: 27px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.sidebar-link {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #A94A4A;
-    text-align: center;
-}
-
-.sidebar-link:hover {
-    background-color: #F4D793;
-    color: black;
-}
-
 .main-content {
-    flex: 1;
-    padding: 40px;
+    margin-left: 240px; /* Adiciona espaço igual à largura da sidebar */
+    padding: 20px;
+    width: 100%;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px; /* Limitando o tamanho do conteúdo */
+    margin: 0 auto; /* Centraliza a .home-content */
+}
+
+.home-content p {
+    max-width: 900px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
 }
 
 h1 {
@@ -55,20 +40,37 @@ h1 {
     font-size: 36px;
     color: #000000;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.main-content p {
-    text-align: left; 
+.home-section {
+    margin-bottom: 40px;
+    background-color: #C1D8C3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-section h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.home-section p {
     font-size: 20px;
-    max-width: 900px; 
-    margin: 0 auto;   
-    line-height: 1.6; 
+    line-height: 1.5;
+    color: #000000;
 }
 
-.imagem-estacionamento {
-    display: block;
-    margin: 30px auto 0; 
-    width: 650px;        
+.section-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section-image img {
+    max-width: 70%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }

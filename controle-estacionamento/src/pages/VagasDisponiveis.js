@@ -34,7 +34,6 @@ const VagasDisponiveis = () => {
         <main className="conteudo-principal">
           <section>
             <h1>Vagas Disponíveis</h1>
-  
             <article className="vaga-container" id="vagaContainer">
               {livres.length === 0
                 ? <p className="mensagem-vazia">Não há vagas disponíveis.</p>
