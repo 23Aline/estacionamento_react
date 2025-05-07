@@ -38,9 +38,9 @@
 }
 
 .conteudo-vagas {
-    margin-left: 240px;  /* Ajuste aqui */
+    margin-left: 240px; 
     padding: 20px;
-    width: calc(100% - 240px);  /* Usar calc() para garantir que o conteúdo não sobreponha */
+    width: calc(100% - 240px);  
 }
 .pesquisa-container {
     margin-top: 20px;
